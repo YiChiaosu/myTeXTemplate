@@ -1,0 +1,80 @@
+\documentclass[11pt,b5paper]{book}
+\usepackage{xeCJK}
+\usepackage{xeCJKfntef}
+\usepackage{amsmath}
+\usepackage{amsthm} 
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{stackengine}
+
+\setCJKmainfont{cwTeXMing}
+\newCJKfontfamily\Kai{cwTeXKai}
+\newCJKfontfamily\FangSong{cwTeXFangSong}
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}
+\newcommand{\normal}{\fontsize{11pt}{\baselineskip}\selectfont}
+\renewcommand{\baselinestretch}{1.2}
+\renewcommand{\CJKglue}{\hskip 1.2pt plus 0.08\baselineskip}
+
+\newcommand{\EC}[1]{\xiaosihao #1 \normal}
+\newcommand{\alias}[2]{\stackunder[1pt]{#1}{\tiny #2 \normalsize}}
+
+\title{色即是空}
+\author{蘇意喬}
+\begin{document}
+	\begin{titlepage}
+	\centering
+	\includegraphics[width=0.15\textwidth]{example-image-1x1}\par\vspace{1cm}
+	{\scshape\LARGE Columbidae University \par}
+	\vspace{1cm}
+	{\scshape\Large Final year project\par}
+	\vspace{1.5cm}
+	{\huge\bfseries Pigeons love doves\par}
+	\vspace{2cm}
+	{\Large\itshape John Birdwatch\par}
+	\vfill
+	supervised by\par
+	Dr.~Mark \textsc{Brown}
+
+	\vfill
+
+	% Bottom of the page
+	{\large \today\par}
+	\end{titlepage}
+
+	\maketitle
+	\tableofcontents
+	\chapter{This is Nothing}
+	\begin{flushright}
+		\begin{minipage}[r]{0.7\textwidth}
+			\begin{flushright}
+			``\textit{Parents of young organic life forms should be warned, that
+			towels can be harmful, if swallowed in large quantities.}''
+			\\[5pt]
+			\rightline{{\rm --- Douglas Adams}}
+			「{\FangSong 知之為知之，不知為不知是知也}」
+			\\[5pt]
+			\rightline{{\rm --- {\Kai 孔子}}}
+		\end{flushright}
+		\end{minipage}
+	\end{flushright}
+	
+	\section{向量空間}
+		\begin{align}
+			\label{trivial GCD}
+			\gcd (1,2) =\gcd (1,3)=\cdots=\gcd(1,n)
+		\end{align}
+	\section{第二}
+題目：$\forall\ x \in \mathbb{N}$ $F(x)$ 在有限次數會停止。\\
+反證法：存在一個$x$會使的$F(x)$無限遞迴，即$F(x)=F(\frac{5x+3}{2})$
+解這個$F(x)$若進行k次遞迴
+\[(\frac{5}{2})^kx+\frac{3}{2}(\frac{5}{2})^{k-1}+\frac{3}{2}(\frac{5}{2})^{k-2}+\cdots+\frac{3}{2}\]
+\[(\frac{5}{2})^k x + \frac{3}{2}\frac{1-(\frac{5}{2})^{k}}{1-\frac{5}{2}} = (\frac{5}{2})^k x - 1 +(\frac{5}{2})^k\]
+如果可以做無限次那麼x+1必須有無限個2的倍數故矛盾
+\end{document}
+
+
