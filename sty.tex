@@ -1,0 +1,26 @@
+\usepackage{xeCJK}
+\usepackage{xeCJKfntef}
+\usepackage{amsmath}
+\usepackage{amsthm} 
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage[inner=1.5cm,outer=3.5cm,top=1.5cm,bottom=3.5cm,twoside]{geometry}
+\usepackage{stackengine}
+
+\setCJKmainfont{cwTeXMing}
+\newCJKfontfamily\Kai{cwTeXKai}
+\newCJKfontfamily\FangSong{cwTeXFangSong}
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}
+\newcommand{\normal}{\fontsize{11pt}{\baselineskip}\selectfont}
+\renewcommand{\baselinestretch}{1.2}
+\renewcommand{\CJKglue}{\hskip 1.2pt plus 0.08\baselineskip}
+
+\newcommand{\EC}[1]{\xiaosihao #1 \normal}
+\newcommand{\alias}[2]{\stackunder[1pt]{#1}{\tiny #2 \normalsize}}
+
+\newtheorem{definition}{Definition}[section]
+
